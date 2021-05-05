@@ -1,0 +1,63 @@
+{ 
+    "_id" : ObjectId("5fd0261c962dd57cee567baf"), 
+    "tag" : [
+        "aa", 
+        " bb"
+    ], 
+    "enabled" : true, 
+    "image" : "", 
+    "supply_price" : NumberInt(12), 
+    "markup" : NumberInt(0), 
+    "retail_price" : NumberInt(24), 
+    "inventory" : NumberInt(12), 
+    "reorder_point" : NumberInt(1), 
+    "reorder_amount" : NumberInt(3), 
+    "tracking_inv" : true, 
+    "variant_inv" : true, 
+    "created_at" : ISODate("2020-12-08T20:44:13.938+0000"), 
+    "handle" : "handle aaa", 
+    "sku" : "asdfasdff", 
+    "name" : "New product", 
+    "description" : "This is for test", 
+    "type" : "bbbb", 
+    "brand" : "Nike", 
+    "supplier" : "Yery team", 
+    "supplier_code" : "1000", 
+    "tax" : "default tax", 
+    "user_id" : "5fd01f4e962dd57cee567bae", 
+    "store_name" : "newonestore", 
+    "variant_products" : [
+        {
+            "inventory" : NumberInt(11), 
+            "reorder_point" : NumberInt(5), 
+            "reorder_amount" : NumberInt(6), 
+            "image" : "", 
+            "_id" : ObjectId("5fd02898962dd57cee567bb3"), 
+            "name" : "red/10", 
+            "sku" : "123", 
+            "supplier_code" : "aaa", 
+            "supply_price" : "12", 
+            "retail_price" : "24", 
+            "markup" : NumberInt(0), 
+            "enabled" : true, 
+            "tax" : ""
+        }
+    ], 
+    "variants" : [
+        {
+            "value" : [
+                "red"
+            ], 
+            "_id" : ObjectId("5fd02817962dd57cee567bb1"), 
+            "attribute" : "color"
+        }, 
+        {
+            "value" : [
+                "10"
+            ], 
+            "_id" : ObjectId("5fd02898962dd57cee567bb5"), 
+            "attribute" : "size"
+        }
+    ], 
+    "__v" : NumberInt(0)
+}

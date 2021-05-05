@@ -1,0 +1,120 @@
+{ 
+    "_id" : ObjectId("6087bd2c3974144ba95fd907"), 
+    "code" : NumberInt(1), 
+    "name" : "Man Utd", 
+    "short_name" : "MUN"
+}
+{ 
+    "_id" : ObjectId("6087bd2c3974144ba95fd908"), 
+    "code" : NumberInt(2), 
+    "name" : "Leeds", 
+    "short_name" : "LEE"
+}
+{ 
+    "_id" : ObjectId("6087bd2c3974144ba95fd909"), 
+    "code" : NumberInt(3), 
+    "name" : "Arsenal", 
+    "short_name" : "ARS"
+}
+{ 
+    "_id" : ObjectId("6087bd2c3974144ba95fd90a"), 
+    "code" : NumberInt(4), 
+    "name" : "Newcastle", 
+    "short_name" : "NEW"
+}
+{ 
+    "_id" : ObjectId("6087bd2c3974144ba95fd90b"), 
+    "code" : NumberInt(6), 
+    "name" : "Spurs", 
+    "short_name" : "TOT"
+}
+{ 
+    "_id" : ObjectId("6087bd2c3974144ba95fd90c"), 
+    "code" : NumberInt(7), 
+    "name" : "Aston Villa", 
+    "short_name" : "AVL"
+}
+{ 
+    "_id" : ObjectId("6087bd2c3974144ba95fd90d"), 
+    "code" : NumberInt(8), 
+    "name" : "Chelsea", 
+    "short_name" : "CHE"
+}
+{ 
+    "_id" : ObjectId("6087bd2c3974144ba95fd90e"), 
+    "code" : NumberInt(11), 
+    "name" : "Everton", 
+    "short_name" : "EVE"
+}
+{ 
+    "_id" : ObjectId("6087bd2c3974144ba95fd90f"), 
+    "code" : NumberInt(13), 
+    "name" : "Leicester", 
+    "short_name" : "LEI"
+}
+{ 
+    "_id" : ObjectId("6087bd2c3974144ba95fd910"), 
+    "code" : NumberInt(14), 
+    "name" : "Liverpool", 
+    "short_name" : "LIV"
+}
+{ 
+    "_id" : ObjectId("6087bd2c3974144ba95fd911"), 
+    "code" : NumberInt(20), 
+    "name" : "Southampton", 
+    "short_name" : "SOU"
+}
+{ 
+    "_id" : ObjectId("6087bd2c3974144ba95fd912"), 
+    "code" : NumberInt(21), 
+    "name" : "West Ham", 
+    "short_name" : "WHU"
+}
+{ 
+    "_id" : ObjectId("6087bd2c3974144ba95fd913"), 
+    "code" : NumberInt(31), 
+    "name" : "Crystal Palace", 
+    "short_name" : "CRY"
+}
+{ 
+    "_id" : ObjectId("6087bd2c3974144ba95fd914"), 
+    "code" : NumberInt(35), 
+    "name" : "West Bromwich Albion", 
+    "short_name" : "WBA"
+}
+{ 
+    "_id" : ObjectId("6087bd2c3974144ba95fd915"), 
+    "code" : NumberInt(36), 
+    "name" : "Brighton", 
+    "short_name" : "BHA"
+}
+{ 
+    "_id" : ObjectId("6087bd2c3974144ba95fd916"), 
+    "code" : NumberInt(39), 
+    "name" : "Wolves", 
+    "short_name" : "WOL"
+}
+{ 
+    "_id" : ObjectId("6087bd2c3974144ba95fd917"), 
+    "code" : NumberInt(43), 
+    "name" : "Man City", 
+    "short_name" : "MCI"
+}
+{ 
+    "_id" : ObjectId("6087bd2c3974144ba95fd918"), 
+    "code" : NumberInt(49), 
+    "name" : "Sheffield United", 
+    "short_name" : "SHU"
+}
+{ 
+    "_id" : ObjectId("6087bd2c3974144ba95fd919"), 
+    "code" : NumberInt(54), 
+    "name" : "Fulham", 
+    "short_name" : "FUL"
+}
+{ 
+    "_id" : ObjectId("6087bd2c3974144ba95fd91a"), 
+    "code" : NumberInt(90), 
+    "name" : "Burnley", 
+    "short_name" : "BUR"
+}

@@ -1,0 +1,16 @@
+{ 
+    "_id" : ObjectId("5fd0280a962dd57cee567bb0"), 
+    "created_at" : ISODate("2020-12-08T20:44:13.932+0000"), 
+    "name" : "color", 
+    "user_id" : "5fd01f4e962dd57cee567bae", 
+    "store_name" : "newonestore", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5fd0285c962dd57cee567bb2"), 
+    "created_at" : ISODate("2020-12-08T20:44:13.932+0000"), 
+    "name" : "size", 
+    "user_id" : "5fd01f4e962dd57cee567bae", 
+    "store_name" : "newonestore", 
+    "__v" : NumberInt(0)
+}

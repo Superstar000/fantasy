@@ -1,0 +1,103 @@
+{ 
+    "_id" : ObjectId("608806be7f7763240ce9c1e5"), 
+    "email_verify" : false, 
+    "role" : "free", 
+    "private_web_address" : "121212313", 
+    "first_name" : "chen", 
+    "last_name" : "kaiwen", 
+    "email" : "chen@gmail.com", 
+    "phone" : "+60132178204", 
+    "password" : "$2a$04$Cb8CjNEqXH8IwC6nNHSoA.zpmJOkqz83iVjXzOmSxUGpf7iU6fhz.", 
+    "partner_email_communication" : NumberInt(1), 
+    "premier_email_communication" : NumberInt(1), 
+    "favourite_club" : NumberInt(1), 
+    "post_code" : "23123", 
+    "country" : "AUS", 
+    "gender" : NumberInt(1), 
+    "birthday" : ISODate("2000-02-02T00:00:00.000+0000"), 
+    "club_email_communication" : [
+
+    ], 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("60900c40b33fc3037c7feb59"), 
+    "email_verify" : false, 
+    "role" : "free", 
+    "private_web_address" : "11111111", 
+    "first_name" : "kevin", 
+    "last_name" : "chen", 
+    "email" : "kevin@gmail.com", 
+    "phone" : "+123456789", 
+    "password" : "$2a$04$AIn2iEHw1aE7pIanG.1V7.s3p38LtLVhKKmpBGKVrn.M88FUIJYZW", 
+    "partner_email_communication" : NumberInt(1), 
+    "premier_email_communication" : NumberInt(1), 
+    "favourite_club" : NumberInt(1), 
+    "post_code" : "23123", 
+    "country" : "AUS", 
+    "gender" : NumberInt(1), 
+    "birthday" : ISODate("2000-02-02T00:00:00.000+0000"), 
+    "club_email_communication" : [
+        {
+            "_id" : ObjectId("60900c40b33fc3037c7feb5a"), 
+            "club" : "Liverpool", 
+            "email_communication" : NumberInt(1)
+        }
+    ], 
+    "store_name" : "aaaaa", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("60900c84b33fc3037c7feb61"), 
+    "email_verify" : false, 
+    "role" : "free", 
+    "private_web_address" : "22222", 
+    "first_name" : "chen1", 
+    "last_name" : "kaiwen", 
+    "email" : "chen1@gmail.com", 
+    "phone" : "+2222222", 
+    "password" : "$2a$04$bGdRWojwn0j57RE8pJD.ueNSoA1nDDdX.WdSBK3QAosEb4L8pE0nS", 
+    "partner_email_communication" : NumberInt(1), 
+    "premier_email_communication" : NumberInt(1), 
+    "favourite_club" : NumberInt(1), 
+    "post_code" : "23123", 
+    "country" : "AUS", 
+    "gender" : NumberInt(1), 
+    "birthday" : ISODate("2000-02-02T00:00:00.000+0000"), 
+    "club_email_communication" : [
+        {
+            "_id" : ObjectId("60900c84b33fc3037c7feb62"), 
+            "club" : "Liverpool", 
+            "email_communication" : NumberInt(1)
+        }
+    ], 
+    "store_name" : "bbbbbbbbb", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("60900c9fb33fc3037c7feb67"), 
+    "email_verify" : false, 
+    "role" : "free", 
+    "private_web_address" : "333333", 
+    "first_name" : "chen2", 
+    "last_name" : "kaiwen", 
+    "email" : "chen2@gmail.com", 
+    "phone" : "+3333333", 
+    "password" : "$2a$04$g/NhnPQKm5vjFomavKoUCuWuJ/7dlISDLhCbf9dU4eRAQyZYdlKle", 
+    "partner_email_communication" : NumberInt(1), 
+    "premier_email_communication" : NumberInt(1), 
+    "favourite_club" : NumberInt(1), 
+    "post_code" : "23123", 
+    "country" : "AUS", 
+    "gender" : NumberInt(1), 
+    "birthday" : ISODate("2000-02-02T00:00:00.000+0000"), 
+    "club_email_communication" : [
+        {
+            "_id" : ObjectId("60900c9fb33fc3037c7feb68"), 
+            "club" : "Liverpool", 
+            "email_communication" : NumberInt(1)
+        }
+    ], 
+    "store_name" : "ccccccc", 
+    "__v" : NumberInt(0)
+}

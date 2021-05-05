@@ -1,0 +1,42 @@
+{ 
+    "_id" : ObjectId("5fd02cd8962dd57cee567bb9"), 
+    "type" : "purchase", 
+    "supplier" : "Saboor", 
+    "deliver_to" : "main outlet", 
+    "deliver_date" : ISODate("2020-12-08T20:44:13.950+0000"), 
+    "status" : "received", 
+    "created" : ISODate("2020-12-08T20:44:13.950+0000"), 
+    "invoice_number" : "1212", 
+    "order_number" : "X6IqfAbJ", 
+    "note" : "", 
+    "store_name" : "newonestore", 
+    "created_by" : "A Saboor", 
+    "products" : [
+        {
+            "name" : "New product", 
+            "inventory" : NumberInt(12), 
+            "qty" : NumberInt(10), 
+            "received_qty" : NumberInt(12), 
+            "enabled" : true, 
+            "_id" : ObjectId("5fd02cd8962dd57cee567bba"), 
+            "supply_price" : "12", 
+            "markup" : "0", 
+            "sku" : "asdfasdff", 
+            "product_id" : "5fd0261c962dd57cee567baf"
+        }, 
+        {
+            "name" : "red/10", 
+            "inventory" : NumberInt(11), 
+            "qty" : NumberInt(20), 
+            "received_qty" : NumberInt(20), 
+            "enabled" : true, 
+            "_id" : ObjectId("5fd02cd8962dd57cee567bbb"), 
+            "sku" : "123", 
+            "supply_price" : "12", 
+            "markup" : "0", 
+            "product_id" : "5fd0261c962dd57cee567baf", 
+            "variant_id" : "5fd02898962dd57cee567bb3"
+        }
+    ], 
+    "__v" : NumberInt(0)
+}

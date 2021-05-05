@@ -1,0 +1,41 @@
+{ 
+    "_id" : ObjectId("5fe0e1b432346d29b9136dc0"), 
+    "customer" : {
+        "customer_id" : "5fe0e1f832346d29b9136dce", 
+        "name" : "Abdul Saboor"
+    }, 
+    "outlet" : "main", 
+    "payment_status" : "completed", 
+    "sale_status" : "usual", 
+    "discount_value" : NumberInt(0), 
+    "discount_symbol" : "%", 
+    "tax" : "", 
+    "created" : ISODate("2020-12-21T16:24:34.047+0000"), 
+    "cart_id" : "5fe0ed3752165e2effc0a0b0", 
+    "user_id" : "5fd01f4e962dd57cee567bae", 
+    "store_name" : "newonestore", 
+    "subtotal" : NumberInt(24), 
+    "note" : "", 
+    "products" : [
+        {
+            "product_name" : "New product", 
+            "name" : "red/10", 
+            "qty" : NumberInt(1), 
+            "discount_value" : NumberInt(0), 
+            "discount_symbol" : "%", 
+            "note" : "", 
+            "_id" : ObjectId("5feb98e852165e2effc0a0c0"), 
+            "product_id" : "5fd0261c962dd57cee567baf", 
+            "variant_id" : "5fd02898962dd57cee567bb3"
+        }
+    ], 
+    "payments" : [
+        {
+            "type" : "cash", 
+            "amount" : NumberInt(50), 
+            "created" : ISODate("2021-01-13T14:20:14.000+0000"), 
+            "_id" : ObjectId("5fff019f52165e2effc0a0c5")
+        }
+    ], 
+    "__v" : NumberInt(0)
+}

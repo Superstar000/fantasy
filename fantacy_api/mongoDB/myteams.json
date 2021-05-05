@@ -1,0 +1,406 @@
+{ 
+    "_id" : ObjectId("608c0ab20dcb685390dd0558"), 
+    "terms_agreed" : true, 
+    "user_id" : "608806be7f7763240ce9c1e5", 
+    "myteam_name" : "strength", 
+    "favourite_team" : NumberInt(5), 
+    "picks" : [
+        {
+            "is_main_member" : false, 
+            "_id" : ObjectId("608c0ab20dcb685390dd0559"), 
+            "element" : NumberInt(417), 
+            "purchase_price" : NumberInt(45)
+        }, 
+        {
+            "is_main_member" : false, 
+            "_id" : ObjectId("608c0ab20dcb685390dd055a"), 
+            "element" : NumberInt(597), 
+            "purchase_price" : NumberInt(46)
+        }, 
+        {
+            "is_main_member" : false, 
+            "_id" : ObjectId("608c0ab20dcb685390dd055b"), 
+            "element" : NumberInt(152), 
+            "purchase_price" : NumberInt(48)
+        }, 
+        {
+            "is_main_member" : false, 
+            "_id" : ObjectId("608c0ab20dcb685390dd055c"), 
+            "element" : NumberInt(200), 
+            "purchase_price" : NumberInt(52)
+        }, 
+        {
+            "is_main_member" : false, 
+            "_id" : ObjectId("608c0ab20dcb685390dd055d"), 
+            "element" : NumberInt(219), 
+            "purchase_price" : NumberInt(56)
+        }, 
+        {
+            "is_main_member" : false, 
+            "_id" : ObjectId("608c0ab20dcb685390dd055e"), 
+            "element" : NumberInt(549), 
+            "purchase_price" : NumberInt(44)
+        }, 
+        {
+            "is_main_member" : false, 
+            "_id" : ObjectId("608c0ab20dcb685390dd055f"), 
+            "element" : NumberInt(498), 
+            "purchase_price" : NumberInt(58)
+        }, 
+        {
+            "is_main_member" : false, 
+            "_id" : ObjectId("608c0ab20dcb685390dd0560"), 
+            "element" : NumberInt(271), 
+            "purchase_price" : NumberInt(58)
+        }, 
+        {
+            "is_main_member" : false, 
+            "_id" : ObjectId("608c0ab20dcb685390dd0561"), 
+            "element" : NumberInt(251), 
+            "purchase_price" : NumberInt(117)
+        }, 
+        {
+            "is_main_member" : false, 
+            "_id" : ObjectId("608c0ab20dcb685390dd0562"), 
+            "element" : NumberInt(275), 
+            "purchase_price" : NumberInt(80)
+        }, 
+        {
+            "is_main_member" : false, 
+            "_id" : ObjectId("608c0ab20dcb685390dd0563"), 
+            "element" : NumberInt(203), 
+            "purchase_price" : NumberInt(54)
+        }, 
+        {
+            "is_main_member" : false, 
+            "_id" : ObjectId("608c0ab20dcb685390dd0564"), 
+            "element" : NumberInt(276), 
+            "purchase_price" : NumberInt(111)
+        }, 
+        {
+            "is_main_member" : false, 
+            "_id" : ObjectId("608c0ab20dcb685390dd0565"), 
+            "element" : NumberInt(91), 
+            "purchase_price" : NumberInt(63)
+        }, 
+        {
+            "is_main_member" : false, 
+            "_id" : ObjectId("608c0ab20dcb685390dd0566"), 
+            "element" : NumberInt(233), 
+            "purchase_price" : NumberInt(62)
+        }, 
+        {
+            "is_main_member" : false, 
+            "_id" : ObjectId("608c0ab20dcb685390dd0567"), 
+            "element" : NumberInt(514), 
+            "purchase_price" : NumberInt(66)
+        }
+    ], 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("60900d9cb33fc3037c7feb69"), 
+    "money" : NumberInt(100), 
+    "score" : NumberInt(0), 
+    "terms_agreed" : true, 
+    "user_id" : "60900c84b33fc3037c7feb61", 
+    "myteam_name" : "strength1", 
+    "favourite_team" : NumberInt(5), 
+    "picks" : [
+        {
+            "is_main_member" : false, 
+            "_id" : ObjectId("60900d9cb33fc3037c7feb6a"), 
+            "element" : NumberInt(417), 
+            "purchase_price" : NumberInt(45)
+        }, 
+        {
+            "is_main_member" : false, 
+            "_id" : ObjectId("60900d9cb33fc3037c7feb6b"), 
+            "element" : NumberInt(597), 
+            "purchase_price" : NumberInt(46)
+        }, 
+        {
+            "is_main_member" : false, 
+            "_id" : ObjectId("60900d9cb33fc3037c7feb6c"), 
+            "element" : NumberInt(152), 
+            "purchase_price" : NumberInt(48)
+        }, 
+        {
+            "is_main_member" : false, 
+            "_id" : ObjectId("60900d9cb33fc3037c7feb6d"), 
+            "element" : NumberInt(200), 
+            "purchase_price" : NumberInt(52)
+        }, 
+        {
+            "is_main_member" : false, 
+            "_id" : ObjectId("60900d9cb33fc3037c7feb6e"), 
+            "element" : NumberInt(219), 
+            "purchase_price" : NumberInt(56)
+        }, 
+        {
+            "is_main_member" : false, 
+            "_id" : ObjectId("60900d9cb33fc3037c7feb6f"), 
+            "element" : NumberInt(549), 
+            "purchase_price" : NumberInt(44)
+        }, 
+        {
+            "is_main_member" : false, 
+            "_id" : ObjectId("60900d9cb33fc3037c7feb70"), 
+            "element" : NumberInt(498), 
+            "purchase_price" : NumberInt(58)
+        }, 
+        {
+            "is_main_member" : false, 
+            "_id" : ObjectId("60900d9cb33fc3037c7feb71"), 
+            "element" : NumberInt(271), 
+            "purchase_price" : NumberInt(58)
+        }, 
+        {
+            "is_main_member" : false, 
+            "_id" : ObjectId("60900d9cb33fc3037c7feb72"), 
+            "element" : NumberInt(251), 
+            "purchase_price" : NumberInt(117)
+        }, 
+        {
+            "is_main_member" : false, 
+            "_id" : ObjectId("60900d9cb33fc3037c7feb73"), 
+            "element" : NumberInt(275), 
+            "purchase_price" : NumberInt(80)
+        }, 
+        {
+            "is_main_member" : false, 
+            "_id" : ObjectId("60900d9cb33fc3037c7feb74"), 
+            "element" : NumberInt(203), 
+            "purchase_price" : NumberInt(54)
+        }, 
+        {
+            "is_main_member" : false, 
+            "_id" : ObjectId("60900d9cb33fc3037c7feb75"), 
+            "element" : NumberInt(276), 
+            "purchase_price" : NumberInt(111)
+        }, 
+        {
+            "is_main_member" : false, 
+            "_id" : ObjectId("60900d9cb33fc3037c7feb76"), 
+            "element" : NumberInt(91), 
+            "purchase_price" : NumberInt(63)
+        }, 
+        {
+            "is_main_member" : false, 
+            "_id" : ObjectId("60900d9cb33fc3037c7feb77"), 
+            "element" : NumberInt(233), 
+            "purchase_price" : NumberInt(62)
+        }, 
+        {
+            "is_main_member" : false, 
+            "_id" : ObjectId("60900d9cb33fc3037c7feb78"), 
+            "element" : NumberInt(514), 
+            "purchase_price" : NumberInt(66)
+        }
+    ], 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("60900dddb33fc3037c7feb79"), 
+    "money" : NumberInt(100), 
+    "score" : NumberInt(0), 
+    "terms_agreed" : true, 
+    "user_id" : "60900c40b33fc3037c7feb59", 
+    "myteam_name" : "strength2", 
+    "favourite_team" : NumberInt(5), 
+    "picks" : [
+        {
+            "is_main_member" : false, 
+            "_id" : ObjectId("60900dddb33fc3037c7feb7a"), 
+            "element" : NumberInt(417), 
+            "purchase_price" : NumberInt(45)
+        }, 
+        {
+            "is_main_member" : false, 
+            "_id" : ObjectId("60900dddb33fc3037c7feb7b"), 
+            "element" : NumberInt(597), 
+            "purchase_price" : NumberInt(46)
+        }, 
+        {
+            "is_main_member" : false, 
+            "_id" : ObjectId("60900dddb33fc3037c7feb7c"), 
+            "element" : NumberInt(152), 
+            "purchase_price" : NumberInt(48)
+        }, 
+        {
+            "is_main_member" : false, 
+            "_id" : ObjectId("60900dddb33fc3037c7feb7d"), 
+            "element" : NumberInt(200), 
+            "purchase_price" : NumberInt(52)
+        }, 
+        {
+            "is_main_member" : false, 
+            "_id" : ObjectId("60900dddb33fc3037c7feb7e"), 
+            "element" : NumberInt(219), 
+            "purchase_price" : NumberInt(56)
+        }, 
+        {
+            "is_main_member" : false, 
+            "_id" : ObjectId("60900dddb33fc3037c7feb7f"), 
+            "element" : NumberInt(549), 
+            "purchase_price" : NumberInt(44)
+        }, 
+        {
+            "is_main_member" : false, 
+            "_id" : ObjectId("60900dddb33fc3037c7feb80"), 
+            "element" : NumberInt(498), 
+            "purchase_price" : NumberInt(58)
+        }, 
+        {
+            "is_main_member" : false, 
+            "_id" : ObjectId("60900dddb33fc3037c7feb81"), 
+            "element" : NumberInt(271), 
+            "purchase_price" : NumberInt(58)
+        }, 
+        {
+            "is_main_member" : false, 
+            "_id" : ObjectId("60900dddb33fc3037c7feb82"), 
+            "element" : NumberInt(251), 
+            "purchase_price" : NumberInt(117)
+        }, 
+        {
+            "is_main_member" : false, 
+            "_id" : ObjectId("60900dddb33fc3037c7feb83"), 
+            "element" : NumberInt(275), 
+            "purchase_price" : NumberInt(80)
+        }, 
+        {
+            "is_main_member" : false, 
+            "_id" : ObjectId("60900dddb33fc3037c7feb84"), 
+            "element" : NumberInt(203), 
+            "purchase_price" : NumberInt(54)
+        }, 
+        {
+            "is_main_member" : false, 
+            "_id" : ObjectId("60900dddb33fc3037c7feb85"), 
+            "element" : NumberInt(276), 
+            "purchase_price" : NumberInt(111)
+        }, 
+        {
+            "is_main_member" : false, 
+            "_id" : ObjectId("60900dddb33fc3037c7feb86"), 
+            "element" : NumberInt(91), 
+            "purchase_price" : NumberInt(63)
+        }, 
+        {
+            "is_main_member" : false, 
+            "_id" : ObjectId("60900dddb33fc3037c7feb87"), 
+            "element" : NumberInt(233), 
+            "purchase_price" : NumberInt(62)
+        }, 
+        {
+            "is_main_member" : false, 
+            "_id" : ObjectId("60900dddb33fc3037c7feb88"), 
+            "element" : NumberInt(514), 
+            "purchase_price" : NumberInt(66)
+        }
+    ], 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("60900e0db33fc3037c7feb89"), 
+    "money" : NumberInt(100), 
+    "score" : NumberInt(0), 
+    "terms_agreed" : true, 
+    "user_id" : "60900c9fb33fc3037c7feb67", 
+    "myteam_name" : "strength3", 
+    "favourite_team" : NumberInt(8), 
+    "picks" : [
+        {
+            "is_main_member" : false, 
+            "_id" : ObjectId("60900e0db33fc3037c7feb8a"), 
+            "element" : NumberInt(417), 
+            "purchase_price" : NumberInt(145)
+        }, 
+        {
+            "is_main_member" : false, 
+            "_id" : ObjectId("60900e0db33fc3037c7feb8b"), 
+            "element" : NumberInt(597), 
+            "purchase_price" : NumberInt(46)
+        }, 
+        {
+            "is_main_member" : false, 
+            "_id" : ObjectId("60900e0db33fc3037c7feb8c"), 
+            "element" : NumberInt(152), 
+            "purchase_price" : NumberInt(48)
+        }, 
+        {
+            "is_main_member" : false, 
+            "_id" : ObjectId("60900e0db33fc3037c7feb8d"), 
+            "element" : NumberInt(200), 
+            "purchase_price" : NumberInt(52)
+        }, 
+        {
+            "is_main_member" : false, 
+            "_id" : ObjectId("60900e0db33fc3037c7feb8e"), 
+            "element" : NumberInt(219), 
+            "purchase_price" : NumberInt(56)
+        }, 
+        {
+            "is_main_member" : false, 
+            "_id" : ObjectId("60900e0db33fc3037c7feb8f"), 
+            "element" : NumberInt(549), 
+            "purchase_price" : NumberInt(44)
+        }, 
+        {
+            "is_main_member" : false, 
+            "_id" : ObjectId("60900e0db33fc3037c7feb90"), 
+            "element" : NumberInt(498), 
+            "purchase_price" : NumberInt(58)
+        }, 
+        {
+            "is_main_member" : false, 
+            "_id" : ObjectId("60900e0db33fc3037c7feb91"), 
+            "element" : NumberInt(271), 
+            "purchase_price" : NumberInt(58)
+        }, 
+        {
+            "is_main_member" : false, 
+            "_id" : ObjectId("60900e0db33fc3037c7feb92"), 
+            "element" : NumberInt(251), 
+            "purchase_price" : NumberInt(117)
+        }, 
+        {
+            "is_main_member" : false, 
+            "_id" : ObjectId("60900e0db33fc3037c7feb93"), 
+            "element" : NumberInt(275), 
+            "purchase_price" : NumberInt(80)
+        }, 
+        {
+            "is_main_member" : false, 
+            "_id" : ObjectId("60900e0db33fc3037c7feb94"), 
+            "element" : NumberInt(203), 
+            "purchase_price" : NumberInt(54)
+        }, 
+        {
+            "is_main_member" : false, 
+            "_id" : ObjectId("60900e0db33fc3037c7feb95"), 
+            "element" : NumberInt(276), 
+            "purchase_price" : NumberInt(111)
+        }, 
+        {
+            "is_main_member" : false, 
+            "_id" : ObjectId("60900e0db33fc3037c7feb96"), 
+            "element" : NumberInt(91), 
+            "purchase_price" : NumberInt(63)
+        }, 
+        {
+            "is_main_member" : false, 
+            "_id" : ObjectId("60900e0db33fc3037c7feb97"), 
+            "element" : NumberInt(233), 
+            "purchase_price" : NumberInt(62)
+        }, 
+        {
+            "is_main_member" : false, 
+            "_id" : ObjectId("60900e0db33fc3037c7feb98"), 
+            "element" : NumberInt(514), 
+            "purchase_price" : NumberInt(66)
+        }
+    ], 
+    "__v" : NumberInt(0)
+}
