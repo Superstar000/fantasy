@@ -29,13 +29,6 @@ const useStyles = makeStyles((theme) => ({
   root: {
     display: "inline-block",
     border: "1px solid #E336FF",
-    // margin: '30px',
-    // [theme.breakpoints.up('md')]: {
-    //   margin: "30px",
-    // },
-    // [theme.breakpoints.up('lg')]: {
-    //   margin: "30px",
-    // },
     [theme.breakpoints.down('sm')]: {
       marginBottom: '20px',
       marginRight: 0,
@@ -109,35 +102,33 @@ export default function FantasyHome(props) {
     setfixview(fixview1);
   };
   return (
-    <div className={classes.container} id="buy-space">
-     
-      <h2 className={classes.title}></h2>
+    <div className={classes.container} >
+
+      <div>&emsp;</div>
       <Button
-                  style={{
-                    marginLeft: "20px",
-                    marginRight: "20px",
-                    textAlign: "left",
-                    backgroundColor: "#8FD0BA",
-                    borderRadius: "30px",
-                  }}
-                  onClick={handleview}
-                >
-                  <div className={fixview ? "pickteam-toggle-on" : ""}>
-                    {" "}
+        style={{
+          marginLeft: "20px",
+          marginRight: "20px",
+          textAlign: "left",
+          backgroundColor: "#8FD0BA",
+          borderRadius: "30px",
+        }}
+        onClick={handleview}
+      >
+        <div className={fixview ? "pickteam-toggle-on" : ""}>
+          {" "}
                     Fixture&nbsp;
                   </div>
-                  <div className={!fixview ? "pickteam-toggle-off" : ""}>
-                    {" "}
+        <div className={!fixview ? "pickteam-toggle-off" : ""}>
+          {" "}
                     &nbsp;&nbsp;&nbsp;&nbsp; FDR&nbsp;&nbsp;&nbsp;&nbsp;
                   </div>
-                </Button>
-      <h2 style={{color:"white",textAlign: 'left',paddingLeft:'5%'}}>Fantasy</h2>
-      <div className="col-md-12 col-sm-12" style={{ padding: '0 5%' }}>        
-      {fixview?<Fixtures/>:<Fdr/>}      
-      </div>    
-      <div className="col-md-12 col-sm-12" style={{ padding: '5%' }}>        
-      <Socialbar/>
+      </Button>
+      
+      <div className="col-md-12 col-sm-12" style={{ padding: '2% 10%' }}>
+        {fixview ? <Fixtures /> : <Fdr />}
       </div>
+      
     </div>
   );
 }

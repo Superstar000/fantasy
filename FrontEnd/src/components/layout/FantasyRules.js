@@ -2,17 +2,17 @@ import React, { Component } from 'react';
 import {withRouter} from "react-router-dom";
 import Navigation from './components/navigation';
 import FantasyRules from './components/FantasyRules';
- 
 import { connect } from "react-redux";
 
-import BG from './home.png';
+
 
 var rootStyle = {
   width: "100%",
-  backgroundImage: `url(${BG})`,
+  backgroundImage: 'radial-gradient(circle, #ff0000b5, #e29fe6, #840090)',
   height: "100%",
   backgroundSize: 'cover',
-  backgroundPosition: 'center'
+  backgroundPosition: 'center',
+  minWidth:'300px'
 };
 export class App extends Component {
   state = {
@@ -25,13 +25,7 @@ export class App extends Component {
       <div style={rootStyle}>
       <div>
         <Navigation data = {this.state.landingPageData.Nav} />
-       {/* <Header data={this.state.landingPageData.Header} />*/}
-        {/* <Features data={this.state.landingPageData.Features} /> */}
-        {/*<Gallery data={this.state.landingPageData.Gallery} />*/}
         <FantasyRules data={this.state.landingPageData.Service} />
-        {/* <Testimonials data={this.state.landingPageData.Testimonials} /> */}
-        {/* <Team data={this.state.landingPageData.Team} /> */}
-         
       </div>
       </div>
     )

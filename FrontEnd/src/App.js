@@ -8,8 +8,9 @@ import { setCurrentUser, logoutUser } from "./actions/authActions";
 import { setCurrentAdmin, logoutAdmin } from "./actions/adminAuthAction";
 import { Provider } from "react-redux";
 import store from "./store";
-
+// fantasy
 import FantasyHome from "./components/layout/FantasyHome";
+import FantasyPoints from "./components/layout/FantasyPoints";
 import FantasyFaq from "./components/layout/FantasyFaq";
 import FantasyHelp from "./components/layout/FantasyHelp";
 import FantasyRules from "./components/layout/FantasyRules";
@@ -20,7 +21,7 @@ import FantasyStats from "./components/layout/FantasyStats";
 import FantasyFixtures from "./components/layout/FantasyFixtures";
 import FantasyStatus from "./components/layout/FantasyStatus";
 import FantasyPickteam from "./components/layout/FantasyPickteam";
-import FantasyTransfers from "./components/layout/FantasyTransfers";
+import FantasyTransfer from "./components/layout/FantasyTransfer";
 import FantasyLeagues from "./components/layout/FantasyLeagues";
 //scout
 import ScoutSetPieces from "./components/layout/ScoutSetPieces";
@@ -53,13 +54,7 @@ import ComStrategy from "./components/layout/ComStrategy";
 import Comprogrammes from "./components/layout/Comprogrammes";
 import Comfacilities from "./components/layout/Comfacilities";
 import Complcharifund from "./components/layout/Complcharifund";
-
-
 import FantasydraftHome from "./components/layout/FantasydraftHome";
-
-
-
-
 import Register from "./components/layout/RegisterHome";
 import Register1 from "./components/layout/RegisterHome1";
 import Register2 from "./components/layout/RegisterHome2";
@@ -130,6 +125,7 @@ class App extends Component {
               <Route exact path="/login" component={Login} />
                {/* fantasy */}
               <Route exact path="/fantasy" component={FantasyHome} />
+              <Route exact path="/fantasypoints" component={FantasyPoints} />
               <Route exact path="/fantasyprizes" component={FantasyPrizes} />
               <Route exact path="/fantasywinners" component={FantasyWinners} />
               <Route exact path="/fantasyscouts" component={FantasyScouts} />
@@ -139,7 +135,7 @@ class App extends Component {
               <Route exact path="/fantasyfaq" component={FantasyFaq} />
               <Route exact path="/fantasystatus" component={FantasyStatus} />
               <Route exact path="/fantasypickteam" component={FantasyPickteam} />
-              <Route exact path="/fantasytransfers" component={FantasyTransfers} />
+              <Route exact path="/fantasytransfer" component={FantasyTransfer} />
               <Route exact path="/fantasyleagues" component={FantasyLeagues} />
               <Route exact path="/fantasyfixtures" component={FantasyFixtures} />
               {/*scout  */}

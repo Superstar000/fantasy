@@ -21,33 +21,25 @@ import Fantasystatus05component from "./subcomponent/Fantasystatus05component";
 import Fantasystatus06component from "./subcomponent/Fantasystatus06component";
 import Scoutplayercomponent from "./subcomponent/Scoutplayercomponent";
 import Fantasyfixturescomponent from "./subcomponent/Fantasyfixturescomponent";
-
 import IconButton from "@material-ui/core/IconButton";
 import ArrowBackIcon from "@material-ui/icons/ArrowBack";
 import ArrowForwardIcon from "@material-ui/icons/ArrowForward";
 import InputBase from "@material-ui/core/InputBase";
 import SearchIcon from "@material-ui/icons/Search";
 
-// import BG from './img/fantasystatus.png';
 
-var rootStyle = {
-  position: "relative",
-  // width: "100%",
-  // backgroundImage: `url(./img/fantasystatus.png)`,
-  // height: "200px",
-  // backgroundSize: 'cover',
-  // backgroundPosition: 'cover',
-  borderRadius: "10px",
-  //  marginTop: '-5rem',
-  //  paddingTop: '1rem',
-  //  paddingRight: '70%'
-};
+
+
 
 const useStyles = makeStyles((theme) => ({
   container: {
     textAlign: "center",
+    backgroundSize: "cover",
+    backgroundRepeat: "no-repeat",
+    backgroundPosition: "center center",
+    width: '100%',
+    height: '2300px',
     paddingTop: "40px",
-    paddingBottom: "30px",
   },
   txtAlign: {
     textAlign: "left",
@@ -55,14 +47,7 @@ const useStyles = makeStyles((theme) => ({
   root: {
     display: "inline-block",
     border: "1px solid #E336FF",
-    // margin: '30px',
-    // [theme.breakpoints.up('md')]: {
-    //   margin: "30px",
-    // },
-    // [theme.breakpoints.up('lg')]: {
-    //   margin: "30px",
-    // },
-    [theme.breakpoints.down("sm")]: {
+      [theme.breakpoints.down("sm")]: {
       marginBottom: "20px",
       marginRight: 0,
       marginLeft: 0,
@@ -160,19 +145,18 @@ export default function FantasyStatus(props) {
   };
 
   return (
-    <div className={classes.container} id="buy-space">
-      <h2 className={classes.title}></h2>
-
-      <div className="row" style={{ paddingLeft: "5%" }}>
+    <div className={classes.container} >
+      <div className="col-md-12 col-sm-12" style={{ padding: " 2% 10%" }}>
         <div className="col-md-12 col-sm-12">
-          <h3 style={{ color: "#585858", textAlign: "left" }}>Transfers</h3>
+          <h2 style={{ color: "white", textAlign:'left'}}>Transfer</h2>
         </div>
         <div className="col-md-12 col-sm-12 text-left">
           Select a maximum of 3 players from a single team or 'Auto Pick' if
           you're short of time.
         </div>
-      </div>
-      <div className="col-md-12 col-sm-12" style={{ padding: "0 5%" }}>
+        <div>&emsp;</div>
+      
+      
         <div className="col-md-8 col-sm-12">
           <Card>
             <div className="">
@@ -641,7 +625,7 @@ export default function FantasyStatus(props) {
             </IconButton> */}
           </div>
         </div>
-      </div>
+        </div>
       <div className="col-md-12" style={{ padding: "0.1%" }}>
         &nbsp;
       </div>

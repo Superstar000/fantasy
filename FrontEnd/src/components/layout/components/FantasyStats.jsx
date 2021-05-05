@@ -1,6 +1,5 @@
 import React from 'react';
 import { useHistory } from "react-router-dom";
-
 import Paper from '@material-ui/core/Paper';
 import Table from '@material-ui/core/Table';
 import TableBody from '@material-ui/core/TableBody';
@@ -9,13 +8,11 @@ import TableContainer from '@material-ui/core/TableContainer';
 import TableHead from '@material-ui/core/TableHead';
 import TablePagination from '@material-ui/core/TablePagination';
 import TableRow from '@material-ui/core/TableRow';
-
 import InputLabel from '@material-ui/core/InputLabel';
 import MenuItem from '@material-ui/core/MenuItem';
 import FormHelperText from '@material-ui/core/FormHelperText';
 import FormControl from '@material-ui/core/FormControl';
 import Select from '@material-ui/core/Select';
-
 import { makeStyles, withStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import { Box } from '@material-ui/core';
@@ -28,8 +25,8 @@ import Typography from '@material-ui/core/Typography';
 import CheckIcon from '@material-ui/icons/Check';
 import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
 import { green, purple } from '@material-ui/core/colors';
-import Socialbar from './subcomponent/socialbar';
-import main from './../../../img/background/main.png';
+
+
 
 const columns = [
   { id: 'name', label: '!', minWidth: 170 },
@@ -93,7 +90,6 @@ const useStyles = makeStyles((theme) => ({
   },
   container: {
     textAlign: "center",
-    backgroundImage: `url(${main})`,
     backgroundSize: "cover",
     backgroundRepeat: "no-repeat",
     backgroundPosition: "center center",
@@ -107,13 +103,6 @@ const useStyles = makeStyles((theme) => ({
   root: {
     display: "inline-block",
     border: "1px solid #E336FF",
-    // margin: '30px',
-    // [theme.breakpoints.up('md')]: {
-    //   margin: "30px",
-    // },
-    // [theme.breakpoints.up('lg')]: {
-    //   margin: "30px",
-    // },
     [theme.breakpoints.down('sm')]: {
       marginBottom: '20px',
       marginRight: 0,
@@ -209,19 +198,15 @@ export default function FantasyStats(props) {
 
 
   return (
-    <div className={classes.container} id="buy-space">
-      <h2 style={{color:"white",textAlign: 'left',paddingLeft:'100px'}}>Fantasy</h2>
-      <div  className="col-md-12 col-sm-12"  style={{ padding: '0 5%' }}>  
+    <div className={classes.container} >
+      <div  className="col-md-12 col-sm-12"  style={{ padding: '2% 10%' }}>  
+         <h2 style={{color:"white",textAlign: 'left', marginLeft:'15px'}}>Statistics</h2>
         <div className="col-md-9 col-sm-9 fantasystats_res">
           <Card >
-            <CardActionArea>
-           
-              <CardContent className={classes.reffirst}>
+           <CardContent className={classes.reffirst}>
                 <div className="row">
                 <div className="col-md-6"> 
-                <Typography gutterBottom variant="h5" component="h2" style={{textAlign: "left"}}>
-                 Statistics
-                </Typography>
+                
                 </div>
                 <div className="col-md-6">
                   <FormControl className={classes.formControl}>
@@ -301,13 +286,13 @@ export default function FantasyStats(props) {
                     />
                   </Paper>
                 </CardContent>
-              </CardActionArea>
+           
           </Card>
 
         </div>
         <div className="col-md-3 col-sm-3 fantasystats_res">          
           <Card className={classes.root}>         
-            <CardActionArea>
+           
               <ThemeProvider theme={theme}>
               <Button fullWidth variant="contained" color="primary" className={classes.margin}>
                 <font style={{textAlign:"left",color:"white"}}><b>LATEST</b></font>
@@ -429,14 +414,11 @@ export default function FantasyStats(props) {
                 </div>
                 </div>
               </CardContent>              
-            </CardActionArea>
+            
            </Card>         
         </div>
          
       </div>
-      <div  className="col-md-12 col-sm-12"  style={{ padding: '5%' }}>  
-            <Socialbar/>
       </div>
-    </div>
   );
 }

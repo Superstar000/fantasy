@@ -13,24 +13,21 @@ import CheckIcon from '@material-ui/icons/Check';
 import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
 import { green, purple } from '@material-ui/core/colors';
 import Submenubar from './subcomponent/Submenubar';
-import main from './../../../img/background/main.png';
 import Imagegallery from './subcomponent/Imagegallery';
 import Globalleague from './subcomponent/Globalleague';
 import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
 import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
+
 const useStyles = makeStyles((theme) => ({
   container: {
     textAlign: "center",
-    backgroundImage: `url(${main})`,
     backgroundSize: "cover",
     backgroundRepeat: "no-repeat",
     backgroundPosition: "center center",
     width: '100%',
     height: 'auto'
   },
-  txtAlign: {
-    textAlign: "left"
-  },
+ 
   root: {
     display: "inline-block",
     border: "1px solid #E336FF",
@@ -120,7 +117,7 @@ export default function FantasyHome(props) {
             <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12" style={{ paddingTop: '35px' }}>
               <div className="status-padding">
               <Button onClick={() => history.push("/login")} variant="contained" color="secondary" size="large" >
-                <font style={{ fontSize: "20px" }}>SIGN IN NOW<i className="fas fa-arrow-right"></i></font>
+                <font style={{ fontSize: "20px" }}>SIGN IN NOW&nbsp;<i className="fas fa-arrow-right"></i></font>
               </Button>
               </div>
               <div className="status-padding">
@@ -132,8 +129,8 @@ export default function FantasyHome(props) {
          </CardContent>
         </Card>
       </div>
-      <div className="col-md-12 col-sm-12" style={{ padding: '3% 10%' }}>
-        <div className="col-md-6 col-sm-6" style={{padding:'0px'}}>
+      <div className="col-md-12 col-sm-12" style={{ padding: '0% 9.5% 2% ' }}>
+        <div className="col-md-6 col-sm-6" style={{padding:'0px', border: '10px solid #d68bdb'}}>
           <Card style={{ backgroundColor: '#ff2882',padding:'30px'}} >
             <CardContent style={{padding:'0px'}} >
               <div className="col-md-12 col-sm-12">
@@ -153,7 +150,7 @@ export default function FantasyHome(props) {
           </Card>
         </div>
        
-        <div className="col-md-6 col-sm-6" style={{padding:'0px'}}>
+        <div className="col-md-6 col-sm-6" style={{padding:'0px',border: '10px solid #d68bdb'}}>
           <Card style={{ backgroundColor: '#ff2882',padding:'30px' }} >
             <CardContent style={{padding:'0px'}} >
               <div className="col-md-12 col-sm-12">
@@ -162,7 +159,7 @@ export default function FantasyHome(props) {
                   </div>
                   <div className="col-md-6 col-sm-12 col-xs-12 card3">
                     <Typography gutterBottom variant="h5" style={{ color: 'white', textAlign: "center" }}>
-                    Create and Join Leagues
+                    Create  Leagues
                    </Typography>
                     <Typography gutterBottom variant="h6" style={{ color: 'white'}}>
                      Play against friends and family, colleagues or a web community in private leagues.
@@ -173,7 +170,7 @@ export default function FantasyHome(props) {
           </Card>
         </div>
     </div>
-      <div className='card4_non_response' style={{ padding: '3% 10%'}}>
+      <div className='card4_non_response' style={{ padding: '5% 10%'}}>
           <Card className='card4'>
              <CardContent >
                <div className="col-md-6 col-sm-6">
@@ -192,7 +189,7 @@ export default function FantasyHome(props) {
             </CardContent>
           </Card>
         </div>
-        <div  className= 'card4_response'style={{ padding: '3% 10%'}}>
+      <div  className= 'card4_response'style={{ padding: '3% 10%'}}>
           <Card className='card4'>
              <CardContent >
                <div className="col-md-12 col-sm-12">

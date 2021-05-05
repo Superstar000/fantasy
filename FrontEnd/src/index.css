@@ -442,26 +442,26 @@ code {
 }
 .fantasy-help-head {
   opacity: 1;
-  color: #585858;
+  color:#37003c;
   font-family: Montserrat-Bold;
-  font-size: 25px;
-  text-align: left;
+  font-size: 35px;
+  text-align: center;
   font-weight: bolder;
   margin-bottom: 20px;
   margin-top: 20px;
 }
 .fantasy-help-content {
   opacity: 1;
-  color: #818181;
+  color: #000000;
   font-family: Montserrat-Regular;
-  font-size: 9px;
+  font-size: 20px;
   text-align: left;
 }
 .fantasy-help-content-head {
   opacity: 1;
-  color: #818181;
+  color: #000000;
   font-family: Montserrat-Regular;
-  font-size: 12px;
+  font-size: 25px;
   text-align: left;
   font-weight: bold;
 }
@@ -528,7 +528,7 @@ code {
   bottom: 0px;
   left: 0px;
   height: 30px;
-  line-height: 15px;
+  line-height: 15px  ;
 }
 .statusborder-right {
   border-right: 1px black solid;
@@ -562,7 +562,7 @@ code {
 .pickteam-white1 {
   color: white;
   background: #29386D;
-  font-size: 18px;
+  font-size: 25px;
 }
 .pickteam-white2 {
   color: white;
@@ -578,7 +578,9 @@ code {
 }
 
 .status-padding20{
-  padding:20px
+  padding:20px;
+  font-size: 20px;
+  color: white;
 }
 .status-padding100{
   padding:100px
@@ -589,9 +591,7 @@ code {
   padding-left: 0px;
   padding-right: 0px;
 }
-/* 
-select
-*/
+
 select {
 
   /* styling */

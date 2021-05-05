@@ -19,22 +19,13 @@ import Fantasyprizecomponent from "./subcomponent/Fantasyprizecomponent";
 const useStyles = makeStyles((theme) => ({
   container: {
     textAlign: "center",
-    paddingTop: "20px",
-    paddingBottom: "30px",
+  
   },
-  txtAlign: {
-    textAlign: "left",
-  },
+ 
   root: {
     display: "inline-block",
     border: "1px solid #E336FF",
-    // margin: '30px',
-    // [theme.breakpoints.up('md')]: {
-    //   margin: "30px",
-    // },
-    // [theme.breakpoints.up('lg')]: {
-    //   margin: "30px",
-    // },
+    
     [theme.breakpoints.down("sm")]: {
       marginBottom: "20px",
       marginRight: 0,
@@ -86,26 +77,16 @@ const Button = withStyles((theme) => ({
   },
 }))(MuiButton);
 
-const CardActions = withStyles((theme) => ({
-  root: {
-    padding: "10px",
-    [theme.breakpoints.up("lg")]: {
-      padding: "14px 25px",
-    },
-    [theme.breakpoints.down("md")]: {
-      padding: "15px 25px ",
-    },
-  },
-}))(MuiCardActions);
 
-export default function FantasyHome(props) {
+export default function FantasyPoints(props) {
   const classes = useStyles();
   const history = useHistory();
   const { data } = props;
 
   return (
-    <div className={classes.container} id="buy-space">
-      <Card style={{ borderRadius: "10px", margin: "10%" }}>
+    <div className={classes.container}>
+      <div className="col-lg-12 col-md-12 col-sm-12" style={{ padding: '3% 10%' }}>
+      <Card style={{ borderRadius: "10px",    background: 'pink' }}>
         <div
           style={{
             marginLeft: "5vw",
@@ -124,7 +105,7 @@ export default function FantasyHome(props) {
             aria-haspopup="true"
             href="#/fantasyprizes"
           >
-            <b>Prizes</b>
+            <h3><b>Prizes</b></h3>
           </Button>
           <Button
             color="secondary"
@@ -133,7 +114,7 @@ export default function FantasyHome(props) {
             aria-haspopup="true"
             href="#/fantasywinners"
           >
-            <b>Winners</b>
+            <h3><b>Winners</b></h3>
           </Button>
         </div>
         <div
@@ -160,9 +141,10 @@ export default function FantasyHome(props) {
           </div>
         </div>
       </Card>
-      <Card style={{ borderRadius: "10px", margin: "10%" }}>
-        <div className="col-md-6 col-sm-12" style={{ padding: "0px" }}>
-          <Card style={{ borderRadius: "10px", margin: "10%" }}>
+      <div>&emsp;</div>
+      <Card style={{ borderRadius: "10px",  background: 'pink' }}>
+        <div className="col-md-6 col-sm-12" style={{ padding: "0px"}}>
+          <Card style={{ borderRadius: "10px", margin: "2%" }}>
             <div>
               <img src="img/prize1.png" width="100%" />
               <CardContent className={classes.reffirst}>
@@ -237,8 +219,8 @@ export default function FantasyHome(props) {
             </div>
           </Card>
         </div>
-        <div className="col-md-6 col-sm-12" style={{ padding: "0px" }}>
-          <Card style={{ borderRadius: "10px", margin: "10%" }}>
+        <div className="col-md-6 col-sm-12" style={{ padding: "0px", background: 'pink' }}>
+          <Card style={{ borderRadius: "10px", margin: "10%",}}>
             <div>
               <img src="img/prize3.png" width="100%" />
               <CardContent className={classes.reffirst}>
@@ -314,7 +296,7 @@ export default function FantasyHome(props) {
             textAlign: "left",
             padding: "4vw",
             fontFamily: "Montserrat-Regular",
-            color: "#818181",
+             background: 'pink'
           }}
         >
           * To be eligible to win a weekly prize, you must have joined the game
@@ -325,10 +307,8 @@ export default function FantasyHome(props) {
           Gameweek that such a chip has been used.
         </div>
       </Card>
-
-      <div className="col-md-12 col-sm-12" style={{ padding: "5%" }}>
-        <Socialbar />
       </div>
+      
     </div>
   );
 }

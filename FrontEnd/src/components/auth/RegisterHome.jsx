@@ -12,24 +12,18 @@ import Typography from "@material-ui/core/Typography";
 import CheckIcon from "@material-ui/icons/Check";
 import { createMuiTheme, ThemeProvider } from "@material-ui/core/styles";
 import { green, purple } from "@material-ui/core/colors";
-import Socialbar from "./../layout/components/subcomponent/socialbar";
-import Submenubar from "./../layout/components/subcomponent/Submenubar";
-
 import { Link, withRouter } from "react-router-dom";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { registerUser } from "../../actions/authActions";
-import classnames from "classnames";
-
 import TextField from "@material-ui/core/TextField";
-
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 const useStyles = makeStyles((theme) => ({
   container: {
     textAlign: "center",
-    paddingTop: "40px",
+    paddingTop: "20px",
     paddingBottom: "30px",
   },
   txtAlign: {
@@ -95,17 +89,7 @@ const Button = withStyles((theme) => ({
   },
 }))(MuiButton);
 
-const CardActions = withStyles((theme) => ({
-  root: {
-    padding: "10px",
-    [theme.breakpoints.up("lg")]: {
-      padding: "14px 25px",
-    },
-    [theme.breakpoints.down("md")]: {
-      padding: "15px 25px ",
-    },
-  },
-}))(MuiCardActions);
+
 
 function Register(props) {
   const classes = useStyles();
@@ -231,21 +215,13 @@ function Register(props) {
   };
 
   return (
-    <div className={classes.container} id="buy-space">
-      <h2 className={classes.title}></h2>
-
+    <div>
       <ToastContainer closeOnClick={true} closeButton={false} />
-
       <form noValidate onSubmit={onSubmit}>
-        <div className="col-md-12 col-sm-12" style={{ padding: "0 10%" }}>
-          <Card>
+        <div className="col-md-12 col-sm-12" style={{ padding: "5% 10%" }}>
+          <Card style={{padding: '30px'}}>
             <CardContent>
-              <Typography
-                gutterBottom
-                variant="h5"
-                component="h2"
-                style={{ textAlign: "center" }}
-              >
+              <Typography gutterBottom variant="h4" component="h2" style={{ textAlign: "center",color:'#37003c' }}>
                 WELCOME Your Personal Details
                 <br />
               </Typography>

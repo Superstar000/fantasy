@@ -10,7 +10,7 @@ import { red } from '@material-ui/core/colors';
 const useStyles = makeStyles((theme) => ({
   root: {
     width: '100%',
-    height: "400px",
+    height: "350px",
     backgroundColor: "white",
     border: "10px solid #37003c",
     [theme.breakpoints.down('sm')]: {

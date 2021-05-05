@@ -81,61 +81,64 @@ export class Navigation extends Component {
               <a style={{ marginTop: "10px",color:'black' }} href="/">
                 <h6>Clubs site:</h6>
               </a>
-              <a href="/">
+              <a href="https://www.arsenal.com/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link" target="_blank">
                 <img className="imghover" src={Icon1} />
               </a>
-              <a>
+               <a href="https://www.avfc.co.uk/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link" target="_blank">
                 <img className="imghover" src={Icon2} />
               </a>
-              <a>
+               <a href="https://www.brightonandhovealbion.com/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link" target="_blank">
                 <img className="imghover" src={Icon3} />
               </a>
-              <a>
+               <a href="https://www.burnleyfootballclub.com/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link" target="_blank">
                 <img className="imghover" src={Icon4} />
               </a>
-              <a>
+               <a href="https://www.chelseafc.com/en" target="_blank">
                 <img className="imghover" src={Icon5} />
               </a>
-              <a>
+               <a href="https://www.cpfc.co.uk/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link" target="_blank">
                 <img className="imghover" src={Icon6} />
               </a>
-              <a>
+               <a href="https://www.evertonfc.com/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link" target="_blank">
                 <img className="imghover" src={Icon7} />
               </a>
-              <a>
+               <a href="https://www.fulhamfc.com/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link" target="_blank">
                 <img className="imghover" src={Icon8} />
               </a>
-              <a>
+               <a href="https://www.leedsunited.com/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link" target="_blank">
                 <img className="imghover" src={Icon9} />
               </a>
-              <a>
+               <a href="https://www.lcfc.com/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link" target="_blank">
                 <img className="imghover" src={Icon10} />
               </a>
-              <a>
+               <a href="https://www.liverpoolfc.com/?utm_source=premier-league-website&utm_campaign=website&utm_medium=linkk" target="_blank">
                 <img className="imghover" src={Icon11} />
               </a>
-              <a>
+               <a href="https://www.mancity.com/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link" target="_blank">
+                <img className="imghover" src={Icon12} />
+              </a>
+               <a href="https://www.manutd.com/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link" target="_blank">
                 <img className="imghover" src={Icon13} />
               </a>
-              <a>
+               <a href="https://www.nufc.co.uk/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link" target="_blank">
                 <img className="imghover" src={Icon14} />
               </a>
-              <a>
+               <a href="https://www.sufc.co.uk/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link" target="_blank">
                 <img className="imghover" src={Icon15} />
               </a>
-              <a>
+               <a href="https://www.southamptonfc.com/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link" target="_blank">
                 <img className="imghover" src={Icon16} />
               </a>
-              <a>
+               <a href="https://www.tottenhamhotspur.com/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link" target="_blank">
                 <img className="imghover" src={Icon17} />
               </a>
-              <a>
+               <a href="https://www.wba.co.uk/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link" target="_blank">
                 <img className="imghover" src={Icon18} />
               </a>
-              <a>
+               <a href="https://www.whufc.com/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link" target="_blank">
                 <img className="imghover" src={Icon19} />
               </a>
-              <a>
+               <a href="wolves.co.uk/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link" target="_blank">
                 <img className="imghover" src={Icon20} />
               </a>
             </div>
@@ -159,20 +162,20 @@ export class Navigation extends Component {
                     </MenuItem>
                     <MenuItem value={1}>
                       {" "}
-                      <a href="/">
+                      <a href="https://www.arsenal.com/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link" target="_blank">
                         <img  src={Icon1} />
                         &emsp;Arsenal
                       </a>{" "}
                     </MenuItem>
                     <MenuItem value={2}>
                       {" "}
-                      <a href="/">
+                      <a href="https://www.avfc.co.uk/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link" target="_blank">
                         <img  src={Icon2} />
                         &emsp;Aston Villa
                       </a>
                     </MenuItem>
                     <MenuItem value={3}>
-                      <a href="/">
+                    <a href="https://www.brightonandhovealbion.com/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link" target="_blank">
                         {" "}
                         <img  src={Icon3} />
                         &emsp;Brighton And Hove Albion
@@ -180,119 +183,119 @@ export class Navigation extends Component {
                     </MenuItem>
                     <MenuItem value={4}>
                       {" "}
-                      <a href="/">
+                      <a href="https://www.burnleyfootballclub.com/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link" target="_blank">
                         <img  src={Icon4} />
                         &emsp;Burnley
                       </a>
                     </MenuItem>
                     <MenuItem value={5}>
                       {" "}
-                      <a href="/">
+                      <a href="https://www.chelseafc.com/en" target="_blank">
                         <img  src={Icon5} />
                         &emsp;Chelsea
                       </a>
                     </MenuItem>
                     <MenuItem value={5}>
                       {" "}
-                      <a href="/">
+                      <a href="https://www.cpfc.co.uk/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link" target="_blank">
                         <img  src={Icon6} />
                         &emsp;CrystalPalace
                       </a>
                     </MenuItem>
                     <MenuItem value={5}>
                       {" "}
-                      <a href="/">
+                      <a href="https://www.evertonfc.com/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link" target="_blank">
                         <img  src={Icon7} />
                         &emsp;Everton
                       </a>
                     </MenuItem>
                     <MenuItem value={5}>
                       {" "}
-                      <a href="/">
+                      <a href="https://www.fulhamfc.com/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link" target="_blank">
                         <img  src={Icon8} />
                         &emsp;Fulham
                       </a>
                     </MenuItem>
                     <MenuItem value={5}>
                       {" "}
-                      <a href="/">
+                      <a href="https://www.leedsunited.com/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link" target="_blank">
                         <img  src={Icon9} />
                         &emsp;Leeds United
                       </a>
                     </MenuItem>
                     <MenuItem value={5}>
                       {" "}
-                      <a href="/">
+                      <a href="https://www.lcfc.com/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link" target="_blank">
                         <img  src={Icon10} />
                         &emsp;Leicester City
                       </a>
                     </MenuItem>
                     <MenuItem value={5}>
                       {" "}
-                      <a href="/">
+                      <a href="https://www.liverpoolfc.com/?utm_source=premier-league-website&utm_campaign=website&utm_medium=linkk" target="_blank">
                         <img  src={Icon11} />
                         &emsp;Liverpool
                       </a>
                     </MenuItem>
                     <MenuItem value={5}>
                       {" "}
-                      <a href="/">
+                      <a href="https://www.mancity.com/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link" target="_blank">
                         <img  src={Icon12} />
                         &emsp;Manchester City
                       </a>
                     </MenuItem>
                     <MenuItem value={5}>
                       {" "}
-                      <a href="/">
+                      <a href="https://www.manutd.com/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link" target="_blank">
                         <img  src={Icon13} />
                         &emsp;Manchester United
                       </a>
                     </MenuItem>
                     <MenuItem value={5}>
                       {" "}
-                      <a href="/">
+                      <a href="https://www.nufc.co.uk/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link" target="_blank">
                         <img  src={Icon14} />
                         &emsp;Newcastle United
                       </a>
                     </MenuItem>
                     <MenuItem value={5}>
                       {" "}
-                      <a href="/">
+                      <a href="https://www.sufc.co.uk/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link" target="_blank">
                         <img  src={Icon15} />
                         &emsp;Sheffield United
                       </a>
                     </MenuItem>
                     <MenuItem value={5}>
                       {" "}
-                      <a href="/">
+                      <a href="https://www.southamptonfc.com/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link" target="_blank">
                         <img  src={Icon16} />
                         &emsp;South Ampton
                       </a>
                     </MenuItem>
                     <MenuItem value={5}>
                       {" "}
-                      <a href="/">
+                      <a href="https://www.tottenhamhotspur.com/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link" target="_blank">
                         <img  src={Icon17} />
                         &emsp;Tottenham Hotspur
                       </a>
                     </MenuItem>
                     <MenuItem value={5}>
                       {" "}
-                      <a href="/">
+                      <a href="https://www.wba.co.uk/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link" target="_blank">
                         <img  src={Icon18} />
                         &emsp;West Bromwich Albion
                       </a>
                     </MenuItem>
                     <MenuItem value={5}>
                       {" "}
-                      <a href="/">
+                      <a href="https://www.whufc.com/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link" target="_blank">
                         <img  src={Icon19} />
                         &emsp;West HamUnited
                       </a>
                     </MenuItem>
                     <MenuItem value={5}>
                       {" "}
-                      <a href="/">
+                      <a href="https://wolves.co.uk/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link" target="_blank">
                         <img  src={Icon20} />
                         &emsp;WolverhamptonWanderers
                       </a>

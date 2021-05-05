@@ -51,13 +51,6 @@ const useStyles = makeStyles((theme) => ({
   root: {
     display: "inline-block",
     border: "1px solid #E336FF",
-    // margin: '30px',
-    // [theme.breakpoints.up('md')]: {
-    //   margin: "30px",
-    // },
-    // [theme.breakpoints.up('lg')]: {
-    //   margin: "30px",
-    // },
     [theme.breakpoints.down('sm')]: {
       marginBottom: '20px',
       marginRight: 0,
@@ -93,7 +86,7 @@ const useStyles = makeStyles((theme) => ({
     marginTop: theme.spacing(2),
   },
   button: {
-    borderRadius:'10px',
+    borderRadius: '10px',
     margin: theme.spacing(2),
   },
 
@@ -153,126 +146,103 @@ export default function Premierreferees(props) {
     setAnchorEl(null);
   };
   return (
-    <div className={classes.container} id="buy-space">
-        
-      <h2 className={classes.title}></h2>
-      <div className="text-center"style={{color:"#585858",fontSize:'49px',fontFamily:'Montserrat-Bold',textAlign: 'center',paddingLeft:'5%',paddingRight:'5%'}}>
-        {/* <b>Prize Winners */}
-        <Card>
-        <Button
-            color="secondary"
-            style={{ position: "relative", height: "50px" }}
-            aria-controls="simple-menu"
-            aria-haspopup="true"
-            href="#/fantasyprizes"
-          >
-            <b>Prizes</b>
-          </Button>
-          <Button
-            color="secondary"
-            style={{ position: "relative", height: "50px" }}
-            aria-controls="simple-menu"
-            aria-haspopup="true"
-            href="#/fantasywinners"
-          >
-            <b>Winners</b>
-          </Button>
+    <div className={classes.container}>
+      <div className="col-md-12 col-sm-12" style={{ padding: "2% 10%" }}>
+        <div className="text-center" style={{ color: "white", fontSize: '49px', fontFamily: 'Montserrat-Bold', textAlign: 'center' }}>
+          <Card>
+            <Button color="secondary" style={{ position: "relative" }} aria-controls="simple-menu" aria-haspopup="true" href="#/fantasyprizes">
+              <h2>Prizes</h2>
+            </Button>
+            <Button color="secondary" style={{ position: "relative" }} aria-controls="simple-menu" aria-haspopup="true" href="#/fantasywinners">
+              <h2>Winners</h2>
+            </Button>
           </Card>
-        {/* </b> */}
-      </div>
-      <div className="col-md-12 col-sm-12" style={{ padding: '0 5%' }}>        
-      <div className="col-md-6 col-sm-6" style={{paddingTop:'5px'}}>
-          <div style={{fontSize:'24px',color:'#585858',fontFamily:'Montserrat-Bold',textAlign:'left',fontFamily:'Montserrat-Bold'}}>
+        </div>
+        <div className="col-md-12 col-sm-12" >
+          <div className="col-md-6 col-sm-6" style={{ paddingTop: '5px' }}>
+            <div>&emsp;</div>
+            <div style={{ fontSize: '24px', color: 'white', fontFamily: 'Montserrat-Bold', textAlign: 'left', fontFamily: 'Montserrat-Bold' }}>
               <b>Gameweek Winners</b>
-          </div>
-          <Card > 
-          <Button fullWidth style={{position:'relative',height:'50px'}}aria-controls="simple-menu" aria-haspopup="true" onClick={handleClick}>
-                <div style={{textAlign:'left',position:'absolute',fontSize:'18px',left:'15px',display:'inline'}}><b>Gameweek Winners</b>
+            </div>
+            <Card >
+              <Button fullWidth style={{ position: 'relative', height: '50px' }} aria-controls="simple-menu" aria-haspopup="true" onClick={handleClick}>
+                <div style={{ textAlign: 'left', position: 'absolute', fontSize: '18px', left: '15px', display: 'inline' }}><b>Gameweek Winners</b>
                 </div>
-                <div style={{textAlign:'right',position:'absolute',right:'30px'}}>
-                <i class="fa fa-angle-down" style={{fontSize:'15px',color:'red'}}></i>
+                <div style={{ textAlign: 'right', position: 'absolute', right: '30px' }}>
+                  <i class="fa fa-angle-down" style={{ fontSize: '15px', color: 'red' }}></i>
                 </div>
-          </Button>
-            <div className="col-md-6 col-sm-6">   
-              <Menu
-                id="simple-menu"
-                anchorEl={anchorEl}
-                keepMounted
-                open={Boolean(anchorEl)}
-                onClose={handleClose}
-              >
-                <MenuItem onClick={handleClose}>Menu1</MenuItem>
-                <MenuItem onClick={handleClose}>Menu2</MenuItem>
-                <MenuItem onClick={handleClose}>Menu3</MenuItem>
-              </Menu>
-              </div>
-          </Card>
-          <div className="premierfixtures">  
-          &nbsp;
-          </div>  
-          <Card >                   
-            <CardActionArea>                           
-                <div className="col-md-12 col-sm-12">                                                     
-                </div>                   
-                  <Fantasywinnerscomponent/>                    
-                                  
-            </CardActionArea>
-          </Card>
-        </div>         
-        <div className="col-md-6 col-sm-6" style={{paddingTop:'5px'}}>
-          <div style={{fontSize:'24px',color:'#585858',fontFamily:'Montserrat-Bold',textAlign:'left',fontFamily:'Montserrat-Bold'}}>
-              <b>Monthly Winners</b>
-          </div>          
-          <Card >
-          <Button fullWidth style={{position:'relative',height:'50px'}}aria-controls="simple-menu1" aria-haspopup="true" onClick={handleClick}>
-                <div style={{textAlign:'left',fontSize:'18px',position:'absolute',left:'15px',display:'inline'}}><b>Monthly Winners</b>
-                </div>
-                <div style={{textAlign:'right',position:'absolute',right:'30px'}}>
-                <i class="fa fa-angle-down" style={{fontSize:'18px',color:'red'}}></i>
-                </div>
-          </Button>
-            <div className="col-md-6 col-sm-6">
+              </Button>
+              <div className="col-md-6 col-sm-6">
                 <Menu
-                    id="simple-menu1"
-                    anchorEl={anchorEl}
-                    keepMounted
-                    open={Boolean(anchorEl)}
-                    onClose={handleClose}
-                  >
-                <MenuItem onClick={handleClose}>Menu1-1</MenuItem>
-                <MenuItem onClick={handleClose}>Menu2-1</MenuItem>
-                <MenuItem onClick={handleClose}>Menu3-1</MenuItem>
-              </Menu>
-              </div> 
-          </Card>           
-          <div className="premierfixtures">  
-          &nbsp;
-          </div>  
-          <Card >
-            <div className="col-md-6 col-sm-6">              
-              </div>              
-            <div className="col-md-4 col-xs-4">         
-            </div>           
-            <CardActionArea>               
-                <div className="col-md-12 col-sm-12">                                                     
-                </div>                   
-                  <Fantasywinnerscomponent/>                    
-                                   
-            </CardActionArea>
-          </Card>
-        </div>
-        <div>
-          &nbsp;
-        </div>
+                  id="simple-menu"
+                  anchorEl={anchorEl}
+                  keepMounted
+                  open={Boolean(anchorEl)}
+                  onClose={handleClose}
+                >
+                  <MenuItem onClick={handleClose}>Menu1</MenuItem>
+                  <MenuItem onClick={handleClose}>Menu2</MenuItem>
+                  <MenuItem onClick={handleClose}>Menu3</MenuItem>
+                </Menu>
+              </div>
+            </Card>
+            <div className="premierfixtures">
+              &nbsp;
+          </div>
+            <Card >
+              <div className="col-md-12 col-sm-12">
+              </div>
+              <Fantasywinnerscomponent />
+            </Card>
+          </div>
+          <div className="col-md-6 col-sm-6" style={{ paddingTop: '5px' }}>
+            <div>&emsp;</div>
+            <div style={{ fontSize: '24px', color: 'white', fontFamily: 'Montserrat-Bold', textAlign: 'left', fontFamily: 'Montserrat-Bold' }}>
+              <b>Monthly Winners</b>
+            </div>
+            <Card >
+              <Button fullWidth style={{ position: 'relative', height: '50px' }} aria-controls="simple-menu1" aria-haspopup="true" onClick={handleClick}>
+                <div style={{ textAlign: 'left', fontSize: '18px', position: 'absolute', left: '15px', display: 'inline' }}><b>Monthly Winners</b>
+                </div>
+                <div style={{ textAlign: 'right', position: 'absolute', right: '30px' }}>
+                  <i class="fa fa-angle-down" style={{ fontSize: '18px', color: 'red' }}></i>
+                </div>
+              </Button>
+              <div className="col-md-6 col-sm-6">
+                <Menu
+                  id="simple-menu1"
+                  anchorEl={anchorEl}
+                  keepMounted
+                  open={Boolean(anchorEl)}
+                  onClose={handleClose}
+                >
+                  <MenuItem onClick={handleClose}>Menu1-1</MenuItem>
+                  <MenuItem onClick={handleClose}>Menu2-1</MenuItem>
+                  <MenuItem onClick={handleClose}>Menu3-1</MenuItem>
+                </Menu>
+              </div>
+            </Card>
+            <div className="premierfixtures">
+              &nbsp;
+          </div>
+            <Card >
+              <div className="col-md-6 col-sm-6">
+              </div>
+              <div className="col-md-4 col-xs-4">
+              </div>
 
-        <p style={{opacity:'1',color:'#818181',fontFamily:"Montserrat-Regular",fontSize:'18px',textAlign:'left'}}>
-           Name: * To be eligible to win a weekly prize, you must have joined the game before the start of the season or a minimum of two clear Gameweeks before the one in which you are top of the weekly leaderboard. Players who have played a chip (including Bench Bo@1X.png
-
+              <div className="col-md-12 col-sm-12">
+              </div>
+              <Fantasywinnerscomponent />
+            </Card>
+          </div>
+          <div>
+            &nbsp;
+        </div>
+          <p style={{ opacity: '1', color: 'black', fontFamily: "Montserrat-Regular", fontSize: '18px', textAlign: 'left' }}>
+            Name: * To be eligible to win a weekly prize, you must have joined the game before the start of the season or a minimum of two clear Gameweeks before the one in which you are top of the weekly leaderboard. Players who have played a chip (including Bench Bo@1X.png
         </p>
-      </div>
-      
-      <div  className="col-md-12 col-sm-12"  style={{ padding: '5%' }}>  
-            <Socialbar/>
+        </div>
       </div>
     </div>
   );

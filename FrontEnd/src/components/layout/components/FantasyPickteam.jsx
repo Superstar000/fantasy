@@ -21,30 +21,21 @@ import Fantasystatus05component from "./subcomponent/Fantasystatus05component";
 import Fantasystatus06component from "./subcomponent/Fantasystatus06component";
 import Scoutplayercomponent from "./subcomponent/Scoutplayercomponent";
 import Fantasyfixturescomponent from "./subcomponent/Fantasyfixturescomponent";
-
+import main from './../../../img/background/main.png';
 import IconButton from "@material-ui/core/IconButton";
 import ArrowBackIcon from "@material-ui/icons/ArrowBack";
 import ArrowForwardIcon from "@material-ui/icons/ArrowForward";
-// import BG from './img/fantasystatus.png';
 
-var rootStyle = {
-  position: "relative",
-  // width: "100%",
-  // backgroundImage: `url(./img/fantasystatus.png)`,
-  // height: "200px",
-  // backgroundSize: 'cover',
-  // backgroundPosition: 'cover',
-  borderRadius: "10px",
-  //  marginTop: '-5rem',
-  //  paddingTop: '1rem',
-  //  paddingRight: '70%'
-};
 
 const useStyles = makeStyles((theme) => ({
   container: {
     textAlign: "center",
-    paddingTop: "40px",
-    paddingBottom: "30px",
+    backgroundSize: "cover",
+    backgroundRepeat: "no-repeat",
+    backgroundPosition: "center center",
+    width: '100%',
+    height: '2300px',
+    paddingTop: "40px"
   },
   txtAlign: {
     textAlign: "left",
@@ -52,13 +43,6 @@ const useStyles = makeStyles((theme) => ({
   root: {
     display: "inline-block",
     border: "1px solid #E336FF",
-    // margin: '30px',
-    // [theme.breakpoints.up('md')]: {
-    //   margin: "30px",
-    // },
-    // [theme.breakpoints.up('lg')]: {
-    //   margin: "30px",
-    // },
     [theme.breakpoints.down("sm")]: {
       marginBottom: "20px",
       marginRight: 0,
@@ -121,20 +105,8 @@ const Button = withStyles((theme) => ({
   },
 }))(MuiButton);
 
-const CardActions = withStyles((theme) => ({
-  root: {
-    padding: "10px",
-    [theme.breakpoints.up("lg")]: {
-      padding: "14px 25px",
-    },
-    [theme.breakpoints.down("md")]: {
-      padding: "15px 25px ",
-    },
-  },
-}))(MuiCardActions);
-
 export default function FantasyStatus(props) {
-  const classes = useStyles();
+  const classNamees = useStyles();
   const history = useHistory();
   const [teamview, setteamview] = useState(false);
 
@@ -145,17 +117,12 @@ export default function FantasyStatus(props) {
   };
 
   return (
-    <div className={classes.container} id="buy-space">
-      <h2 className={classes.title}></h2>
-
-      <div className="row">
-        <h3 style={{ color: "#585858", textAlign: "left", paddingLeft: "5%" }}>
-          Pick Team
-        </h3>
-      </div>
-      <div className="col-md-12 col-sm-12" style={{ padding: "0 5%" }}>
+    <div className={classNamees.container} >
+      <div className="col-md-12 col-sm-12" style={{ padding: "2% 10%" }}>
+        <h2 style={{ color: 'white', textAlign: "left", marginLeft:'15px'}}> Pick Team </h2>
+        <div>&emsp;</div>
         <div className="col-md-8 col-sm-12">
-          <Card>
+          <Card style={{padding:'0px'}}>
             <div className="">
               <div className="col-md-12 col-sm-12 pickteam-blue1">
                 <span className="pickteam-white1">
@@ -167,7 +134,7 @@ export default function FantasyStatus(props) {
                   <b>Fri 30 APr 23:00 </b>
                 </span>
               </div>
-              <div className="col-md-12 col-sm-12 pickteam-white pickteam-blue status-padding20">
+              <div className="col-md-12 col-sm-12 pickteam-white pickteam-blue status-padding20 ">
                 To change your captain use the menu which appears when clicking
                 on a player's shirt.
               </div>
@@ -353,7 +320,7 @@ export default function FantasyStatus(props) {
             <img src="./img/logo.png" />
           </div>
           <div className="col-md-12 col-sm-12 col-xs-12 text-center">
-            <h4>Fixtures</h4>
+            <h3>Fixtures</h3>
           </div>
           <div className="col-md-12 col-sm-12 col-xs-12 text-center">
             <Button
@@ -361,7 +328,7 @@ export default function FantasyStatus(props) {
                 textAlign: "left",
                 backgroundColor: "white",
                 borderRadius: "5px",
-                color: "green",
+                color: "black",
                 border: "0.5px green solid",
               }}
             >
@@ -378,7 +345,7 @@ export default function FantasyStatus(props) {
                 <ArrowBackIcon />
               </IconButton>
             </div>
-            <div className="col-md-10 sol-sm-10 col-xs-8">
+            <div className="col-md-10 sol-sm-10 col-xs-8 trans">
               Gameweek 34 - Fri 30 Apr 23:00
               <br />
               All times are shown in your local time
@@ -400,7 +367,7 @@ export default function FantasyStatus(props) {
                 textAlign: "left",
                 backgroundColor: "#EEEEEE",
                 borderRadius: "5px",
-                color: "green",
+                color: "black",
                 border: "0.5px green solid",
               }}
             >
@@ -444,7 +411,6 @@ export default function FantasyStatus(props) {
             </div>
           </div>
         </div>
-
         <div className="col-md-4 col-sm-12">
           <Card>
             <CardActionArea>
@@ -619,9 +585,9 @@ export default function FantasyStatus(props) {
           </Card>
         </div>
       </div>
-      <div className="col-md-12" style={{ padding: "0.1%" }}>
+      {/* <div className="col-md-12" style={{ padding: "0.1%" }}>
         &nbsp;
-      </div>
+      </div> */}
     </div>
   );
 }

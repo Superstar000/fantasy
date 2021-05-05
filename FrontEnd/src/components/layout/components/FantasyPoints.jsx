@@ -21,7 +21,6 @@ import Fantasystatus05component from "./subcomponent/Fantasystatus05component";
 import Fantasystatus06component from "./subcomponent/Fantasystatus06component";
 import Scoutplayercomponent from "./subcomponent/Scoutplayercomponent";
 import Fantasyfixturescomponent from "./subcomponent/Fantasyfixturescomponent";
-
 import IconButton from "@material-ui/core/IconButton";
 import ArrowBackIcon from "@material-ui/icons/ArrowBack";
 import ArrowForwardIcon from "@material-ui/icons/ArrowForward";
@@ -126,15 +125,10 @@ export default function FantasyStatus(props) {
   };
 
   return (
-    <div className={classes.container} id="buy-space">
-      <h2 className={classes.title}></h2>
-
-      <div className="row">
-        <h3 style={{ color: "#585858", textAlign: "left", paddingLeft: "5%" }}>
-          Pick Team
-        </h3>
-      </div>
-      <div className="col-md-12 col-sm-12" style={{ padding: "0 5%" }}>
+    <div className={classes.container}>
+      <div className="col-md-12 col-sm-12" style={{ padding: "2% 10%" }}>
+        <h2 style={{ color: 'white', textAlign: "left" , marginLeft:'15px' }}>Points</h2> 
+        <div>&emsp;</div>
         <div className="col-md-8 col-sm-12">
           <Card>
             <div className="">
@@ -426,7 +420,6 @@ export default function FantasyStatus(props) {
             </div>
           </div>
         </div>
-
         <div className="col-md-4 col-sm-12">
           <Card>
             <CardActionArea>
@@ -600,10 +593,7 @@ export default function FantasyStatus(props) {
             </CardActionArea>
           </Card>
         </div>
-      </div>
-      <div className="col-md-12" style={{ padding: "0.1%" }}>
-        &nbsp;
-      </div>
+      </div> 
     </div>
   );
 }

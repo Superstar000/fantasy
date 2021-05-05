@@ -21,30 +21,20 @@ import Fantasystatus05component from "./subcomponent/Fantasystatus05component";
 import Fantasystatus06component from "./subcomponent/Fantasystatus06component";
 import Scoutplayercomponent from "./subcomponent/Scoutplayercomponent";
 import Fantasyfixturescomponent from "./subcomponent/Fantasyfixturescomponent";
-
 import IconButton from "@material-ui/core/IconButton";
 import ArrowBackIcon from "@material-ui/icons/ArrowBack";
 import ArrowForwardIcon from "@material-ui/icons/ArrowForward";
-// import BG from './img/fantasystatus.png';
 
-var rootStyle = {
-  position: "relative",
-  // width: "100%",
-  // backgroundImage: `url(./img/fantasystatus.png)`,
-  // height: "200px",
-  // backgroundSize: 'cover',
-  // backgroundPosition: 'cover',
-  borderRadius: "10px",
-  //  marginTop: '-5rem',
-  //  paddingTop: '1rem',
-  //  paddingRight: '70%'
-};
+
 
 const useStyles = makeStyles((theme) => ({
   container: {
     textAlign: "center",
-    paddingTop: "40px",
-    paddingBottom: "30px",
+    backgroundSize: "cover",
+    backgroundRepeat: "no-repeat",
+    backgroundPosition: "center center",
+    width: '100%',
+    height: 'auto'
   },
   txtAlign: {
     textAlign: "left",
@@ -52,13 +42,6 @@ const useStyles = makeStyles((theme) => ({
   root: {
     display: "inline-block",
     border: "1px solid #E336FF",
-    // margin: '30px',
-    // [theme.breakpoints.up('md')]: {
-    //   margin: "30px",
-    // },
-    // [theme.breakpoints.up('lg')]: {
-    //   margin: "30px",
-    // },
     [theme.breakpoints.down("sm")]: {
       marginBottom: "20px",
       marginRight: 0,
@@ -137,7 +120,6 @@ export default function FantasyStatus(props) {
   const classes = useStyles();
   const history = useHistory();
   const [teamview, setteamview] = useState(false);
-
   const { data } = props;
   const handleview = (e) => {
     const teamview1 = !teamview;
@@ -145,159 +127,153 @@ export default function FantasyStatus(props) {
   };
 
   return (
-    <div className={classes.container} id="buy-space">
-      <h2 className={classes.title}></h2>
+    <div className={classes.container} >
 
-      <div className="row"></div>
-      <div className="col-md-12 col-sm-12" style={{ padding: "0 5%" }}>
-        <div className="col-md-12 col-sm-12">
-          <Card>
-            <div className="col-md-12 col-sm-12 text-left">
-              <h3>My Leagues</h3>
+      <div className="col-md-12 col-sm-12" style={{ padding: "2% 10%" }}>
+        <h2 style={{ color: 'white', textAlign: 'left' }}>My Leagues</h2>
+        <div>&emsp;</div>
+        <Card style={{backgroundColor:' rgb(247 48 245)'}}>
+          <CardContent >
+            <Card style={{ padding: '0px' }}>
+              <div className="col-md-12 col-sm-12">
+                <div className="col-md-6 col-sm-6">
+                  <select className="minimal">
+                    <option>Create and Join Leagues</option>
+                    <option>Second</option>
+                    <option>Third</option>
+                  </select>
+                </div>
+                <div className="col-md-6 col-sm-6">
+                  <select className="minimal">
+                    <option>Renew your leaguese</option>
+                    <option>Second</option>
+                    <option>Third</option>
+                  </select>
+                </div>
+              </div>
+              <div className="col-md-12 col-sm-12 ">&nbsp;</div>
+            </Card>
 
-              <h6>my leagues is good</h6>
+            <div className="col-md-12 col-sm-12 ">&nbsp;</div>
+            <div className="col-md-12 col-sm-12" style={{ padding: '0px' }}>
+              <div className="col-md-6 col-sm-6 status-padding3">
+                <Card >
+                  <br />
+                  <h5>Private Classic Leagues</h5>
+                  <br />
+                </Card>
+              </div>
+              <div className="col-md-6 col-sm-6 status-padding3">
+                <Card >
+                  <br />
+                  <h5>Private head to head leagues</h5>
+                  <br />
+                </Card>
+              </div>
             </div>
+
+            <div className="col-md-12 col-sm-12" style={{ padding: '0px' }}>
+              &nbsp;<br />
+              <div className="col-md-2 col-sm-2">League</div>
+              <div className="col-md-2 col-sm-2">Current Rank</div>
+              <div className="col-md-2 col-sm-2">Last Rank</div>
+              <div className="col-md-2 col-sm-2">League</div>
+              <div className="col-md-2 col-sm-2">Current Rank</div>
+              <div className="col-md-2 col-sm-2">Last Rank</div>
+              <br />&nbsp;
+        </div>
+            <div className="col-md-12 col-sm-12 ">
+              <div className="col-md-6 col-sm-6">
+                <Card>&nbsp;<br />&nbsp;<br />&nbsp;<br />&nbsp;<br />&nbsp;<br />&nbsp;<br />&nbsp;<br />&nbsp;<br /></Card>
+              </div>
+              <div className="col-md-6 col-sm-6">
+                <Card>&nbsp;<br />&nbsp;<br />&nbsp;<br />&nbsp;<br />&nbsp;<br />&nbsp;<br />&nbsp;<br />&nbsp;<br /></Card>
+              </div>
+            </div>
+            <div className="col-md-12 col-sm-12">&nbsp;</div>
             <div className="col-md-12 col-sm-12">
               <div className="col-md-6 col-sm-6">
-                <select class="minimal">
-                  <option>Create and Join Leagues</option>
-                  <option>Second</option>
-                  <option>Third</option>
-                </select>
+                <Card>&nbsp;<br />Public head to head leagues<br />&nbsp;</Card>
               </div>
               <div className="col-md-6 col-sm-6">
-                <select class="minimal">
-                  <option>Renew your leaguese</option>
-                  <option>Second</option>
-                  <option>Third</option>
-                </select>
+                <Card>&nbsp;<br />Public classic leagues<br />&nbsp;</Card>
               </div>
             </div>
-            <div className="col-md-12 col-sm-12 status-padding20">&nbsp;</div>
-          </Card>
-        </div>
-        <div className="col-md-12 col-sm-12 status-padding20">&nbsp;</div>
-        <div className="col-md-12 col-sm-12">
-          <div className="col-md-6 col-sm-6 status-padding3">
-            <Card>
-            <br/>
-              <h5>Private Classic Leagues</h5>
-              <br/>
-            </Card>
-          </div>
-          <div className="col-md-6 col-sm-6 status-padding3">
-            <Card>
-            <br/>
-              <h5>Private head to head leagues</h5>
-              <br/>
-            </Card>
-          </div>
-        </div>
+            <div className="col-md-12 col-sm-12">
+              &nbsp;<br />
+              <div className="col-md-2 col-sm-2">League</div>
+              <div className="col-md-2 col-sm-2">Current Rank</div>
+              <div className="col-md-2 col-sm-2">Last Rank</div>
+              <div className="col-md-2 col-sm-2">League</div>
+              <div className="col-md-2 col-sm-2">Current Rank</div>
+              <div className="col-md-2 col-sm-2">Last Rank</div>
+              <br />
+            </div>
 
-        <div className="col-md-12 col-sm-12">
-        &nbsp;<br/>
-          <div className="col-md-2 col-sm-2">League</div>
-          <div className="col-md-2 col-sm-2">Current Rank</div>
-          <div className="col-md-2 col-sm-2">Last Rank</div>
-          <div className="col-md-2 col-sm-2">League</div>
-          <div className="col-md-2 col-sm-2">Current Rank</div>
-          <div className="col-md-2 col-sm-2">Last Rank</div>
-          <br/>&nbsp;
+            <div className="col-md-12 col-sm-12">&nbsp;</div>
+            <div className="col-md-12 col-sm-12 ">
+              <div className="col-md-6 col-sm-6">
+                <Card>&nbsp;<br />&nbsp;<br />&nbsp;<br />&nbsp;<br />&nbsp;<br />&nbsp;<br />&nbsp;<br />&nbsp;<br /></Card>
+              </div>
+              <div className="col-md-6 col-sm-6">
+                <Card>&nbsp;<br />&nbsp;<br />&nbsp;<br />&nbsp;<br />&nbsp;<br />&nbsp;<br />&nbsp;<br />&nbsp;<br /></Card>
+              </div>
+            </div>
+            <div className="col-md-12 col-sm-12">&nbsp;</div>
+            <div className="col-md-12 col-sm-12 text-left">
+              <Card>&nbsp;<br /><h4>Global leagues</h4><br /> </Card>
+            </div>
+            <div className="col-md-12 col-sm-12">
+              &nbsp;<br />
+              <div className="col-md-4 col-sm-4 text-left">League</div>
+              <div className="col-md-4 col-sm-4 text-left">Current Rank</div>
+              <div className="col-md-4 col-sm-4 text-left">Last Rank</div>
+              <br />&nbsp;
         </div>
-        <div className="col-md-12 col-sm-12 status-padding200">
-          <div className="col-md-6 col-sm-6">
-            <Card>&nbsp;<br/>&nbsp;<br/>&nbsp;<br/>&nbsp;<br/>&nbsp;<br/>&nbsp;<br/>&nbsp;<br/>&nbsp;<br/></Card>
-          </div>
-          <div className="col-md-6 col-sm-6">
-            <Card>&nbsp;<br/>&nbsp;<br/>&nbsp;<br/>&nbsp;<br/>&nbsp;<br/>&nbsp;<br/>&nbsp;<br/>&nbsp;<br/></Card>
-          </div>
-        </div>
-        <div className="col-md-12 col-sm-12">&nbsp;</div>
-        <div className="col-md-12 col-sm-12">
-          <div className="col-md-6 col-sm-6">
-            <Card>&nbsp;<br/>Public head to head leagues<br/>&nbsp;</Card>
-          </div>
-          <div className="col-md-6 col-sm-6">
-            <Card>&nbsp;<br/>Public classic leagues<br/>&nbsp;</Card>
-          </div>
-        </div>
-        <div className="col-md-12 col-sm-12">
-        &nbsp;<br/>
-          <div className="col-md-2 col-sm-2">League</div>
-          <div className="col-md-2 col-sm-2">Current Rank</div>
-          <div className="col-md-2 col-sm-2">Last Rank</div>
-          <div className="col-md-2 col-sm-2">League</div>
-          <div className="col-md-2 col-sm-2">Current Rank</div>
-          <div className="col-md-2 col-sm-2">Last Rank</div>
-          <br/> 
-        </div>
-        
-        <div className="col-md-12 col-sm-12">&nbsp;</div>
-        <div className="col-md-12 col-sm-12 status-padding200">
-          <div className="col-md-6 col-sm-6">
-            <Card>&nbsp;<br/>&nbsp;<br/>&nbsp;<br/>&nbsp;<br/>&nbsp;<br/>&nbsp;<br/>&nbsp;<br/>&nbsp;<br/></Card>
-          </div>
-          <div className="col-md-6 col-sm-6">
-            <Card>&nbsp;<br/>&nbsp;<br/>&nbsp;<br/>&nbsp;<br/>&nbsp;<br/>&nbsp;<br/>&nbsp;<br/>&nbsp;<br/></Card>
-          </div>
-        </div>
-        <div className="col-md-12 col-sm-12">&nbsp;</div>
-        <div className="col-md-12 col-sm-12 text-left">
-          <Card>&nbsp;<br/><h4>Global leagues</h4><br/> </Card>
-        </div>
-        <div className="col-md-12 col-sm-12">
-        &nbsp;<br/>
-          <div className="col-md-4 col-sm-4 text-left">League</div>
-          <div className="col-md-4 col-sm-4 text-left">Current Rank</div>
-          <div className="col-md-4 col-sm-4 text-left">Last Rank</div>
-          <br/>&nbsp;
-        </div>
-        <div className="col-md-12 col-sm-12">
-          <Card>
-          &nbsp;<br/>
-            <div className="col-md-10 col-sm-10 text-left">Man City</div>
-            <div className="col-md-2 col-sm-2">
-            <i class="fa fa-cog fa-spin" style={{fontSize:'14px'}}></i>Options</div>
-            <br/> &nbsp;
+            <div className="col-md-12 col-sm-12">
+              <Card>
+                &nbsp;<br />
+                <div className="col-md-10 col-sm-10 text-left">Man City</div>
+                <div className="col-md-2 col-sm-2">
+                  <i class="fa fa-cog fa-spin" style={{ fontSize: '14px' }}></i>Options</div>
+                <br /> &nbsp;
           </Card>
+            </div>
+            <div className="col-md-12 col-sm-12">
+              &nbsp;<br />
+              <div className="col-md-10 col-sm-10 text-left">India</div>
+              <div className="col-md-2 col-sm-2">
+                <i class="fa fa-cog fa-spin" style={{ fontSize: '14px' }}></i>Options</div>
+              <br /> &nbsp;
         </div>
-        <div className="col-md-12 col-sm-12">
-        &nbsp;<br/>
-          <div className="col-md-10 col-sm-10 text-left">India</div>
-          <div className="col-md-2 col-sm-2">
-          <i class="fa fa-cog fa-spin" style={{fontSize:'14px'}}></i>Options</div>
-          <br/> &nbsp;
-        </div>
-        <div className="col-md-12 col-sm-12">
-          <Card>
-          &nbsp;<br/>
-            <div className="col-md-10 col-sm-10 text-left">Gameweek 34</div>
-            <div className="col-md-2 col-sm-2">
-            <i class="fa fa-cog fa-spin" style={{fontSize:'14px'}}></i>Options</div>
-            
-            <br/> &nbsp;
+            <div className="col-md-12 col-sm-12">
+              <Card>
+                &nbsp;<br />
+                <div className="col-md-10 col-sm-10 text-left">Gameweek 34</div>
+                <div className="col-md-2 col-sm-2">
+                  <i class="fa fa-cog fa-spin" style={{ fontSize: '14px' }}></i>Options</div>
+
+                <br /> &nbsp;
           </Card>
+            </div>
+            <div className="col-md-12 col-sm-12">
+              &nbsp;<br />
+              <div className="col-md-10 col-sm-10 text-left">Overall</div>
+              <div className="col-md-2 col-sm-2">
+                <i class="fa fa-cog fa-spin" style={{ fontSize: '14px' }}></i>Options</div>
+              <br /> &nbsp;
         </div>
-        <div className="col-md-12 col-sm-12">
-        &nbsp;<br/>
-          <div className="col-md-10 col-sm-10 text-left">Overall</div>
-          <div className="col-md-2 col-sm-2">
-          <i class="fa fa-cog fa-spin" style={{fontSize:'14px'}}></i>Options</div>
-          <br/> &nbsp;
-        </div>
-        <div className="col-md-12 col-sm-12">
-          <Card>
-          &nbsp;<br/>
-          <div className="col-md-10 col-sm-10 text-left">Star Sports</div>
-          <div className="col-md-2 col-sm-2">
-          <i class="fa fa-cog fa-spin" style={{fontSize:'14px'}}></i>Options</div>
-          <br/> &nbsp;
+            <div className="col-md-12 col-sm-12">
+              <Card>
+                &nbsp;<br />
+                <div className="col-md-10 col-sm-10 text-left">Star Sports</div>
+                <div className="col-md-2 col-sm-2">
+                  <i class="fa fa-cog fa-spin" style={{ fontSize: '14px' }}></i>Options</div>
+                <br /> &nbsp;
           </Card>
-        </div>
-      </div>
- 
-      <div className="col-md-12" style={{ padding: "0.1%" }}>
-        &nbsp;
+            </div>
+          </CardContent>
+        </Card>
       </div>
     </div>
   );

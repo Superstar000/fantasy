@@ -18,7 +18,7 @@ import Submenubar from "./subcomponent/Submenubar";
 const useStyles = makeStyles((theme) => ({
   container: {
     textAlign: "center",
-    paddingTop: "40px",
+    paddingTop: "20px",
     paddingBottom: "30px",
   },
   txtAlign: {
@@ -27,13 +27,6 @@ const useStyles = makeStyles((theme) => ({
   root: {
     display: "inline-block",
     border: "1px solid #E336FF",
-    // margin: '30px',
-    // [theme.breakpoints.up('md')]: {
-    //   margin: "30px",
-    // },
-    // [theme.breakpoints.up('lg')]: {
-    //   margin: "30px",
-    // },
     [theme.breakpoints.down("sm")]: {
       marginBottom: "20px",
       marginRight: 0,
@@ -114,12 +107,11 @@ export default function FantasyHome(props) {
   const { data } = props;
 
   return (
-    <div className={classes.container} id="buy-space">
-      <h2 className={classes.title}></h2>
-
-      <div className="col-md-12 col-sm-12"></div>
-      <div className="col-md-12 col-sm-12" style={{ padding: "0 10%" }}>
-        <Card style={{padding:'0 5%'}}>
+    <div className={classes.container}>
+      <div className="col-md-12 col-sm-12" style={{ padding: "2% 10%" }}>
+        <h2 style={{ textAlign:'left', color:'white'}}>Help</h2>
+        <div>&emsp;</div>
+        <Card style={{padding:'5% 5%'}}>
           <CardActionArea>
              
             <div className="fantasy-help-head">
@@ -667,9 +659,6 @@ export default function FantasyHome(props) {
             </div>
           </CardActionArea>
         </Card>
-      </div>
-      <div className="col-md-12 col-sm-12" style={{ padding: "5%" }}>
-        <Socialbar />
       </div>
     </div>
   );
